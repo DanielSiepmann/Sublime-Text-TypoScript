@@ -112,7 +112,32 @@
 		</dict>
 		<dict>
 			<key>begin</key>
-			<string>:?=</string>
+			<string>:=</string>
+			<key>beginCaptures</key>
+			<dict>
+				<key>0</key>
+				<dict>
+					<key>name</key>
+					<string>keyword.operator</string>
+				</dict>
+			</dict>
+			<key>comment</key>
+			<string>value modifications</string>
+			<key>end</key>
+			<string>($)</string>
+			<key>name</key>
+			<string>string.interpolated.typoscript</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>#typo_value_modifications</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>begin</key>
+			<string>=</string>
 			<key>beginCaptures</key>
 			<dict>
 				<key>0</key>
@@ -324,6 +349,13 @@
 			<string>\b(config|lib|styles|(plugin.tx_\w*)|temp|config|page|tt_\w*)\b</string>
 			<key>name</key>
 			<string>variable.language.top_level.typoscript</string>
+		</dict>
+		<key>typo_value_modifications</key>
+		<dict>
+			<key>match</key>
+			<string>\b(prependString|appendString|removeString|replaceString|replaceString|addToList|removeFromList|uniqueList|reverseList|sortList)\b</string>
+			<key>name</key>
+			<string>support.function.modifier.typoscript</string>
 		</dict>
 	</dict>
 	<key>scopeName</key>
