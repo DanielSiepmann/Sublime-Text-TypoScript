@@ -185,11 +185,7 @@
 			<array>
 				<dict>
 					<key>include</key>
-					<string>#typo_content_objects</string>
-				</dict>
-				<dict>
-					<key>include</key>
-					<string>#typo_defined_properties</string>
+					<string>text.html.basic</string>
 				</dict>
 			</array>
 		</dict>
