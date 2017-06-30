@@ -9,6 +9,7 @@
 		<string>t3</string>
 		<string>t3c</string>
 		<string>t3s</string>
+		<string>typoscript</string>
 	</array>
 	<key>foldingStartMarker</key>
 	<string>/\*\*|\{\s*$</string>
