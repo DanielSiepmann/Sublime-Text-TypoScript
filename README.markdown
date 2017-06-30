@@ -29,7 +29,8 @@ The ``ApplySyntax`` configuration actually looks like this:
                 "rules": [
                     {"file_path": ".*(\\\\|/)ext_conf_template\\.txt$"},
                     {"file_path": ".*(\\\\|/)ext_typoscript_(setup|constants)\\.txt$"},
-                    {"file_name": ".*(\\\\|/)(fileadmin|typo3|TypoScript).*(\\\\|/)(setup|constants)\\.txt$"}
+                    {"file_name": ".*(\\\\|/)(fileadmin|typo3|TypoScript).*(\\\\|/)(setup|constants)\\.txt$"},
+                    {"file_path": ".*(\\\\|/)Configuration(\\\\|/)TypoScript(\\\\|/).*\\.txt$"}
                 ]
             }
         ]
